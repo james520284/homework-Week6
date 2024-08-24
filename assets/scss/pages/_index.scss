@@ -1,0 +1,233 @@
+.index-main{
+  // sec1開始
+  .sec1 {
+    .banner{
+      max-width: 1296px;
+      height: calc(100vh - 96px);
+      background-image: url(../images/banner.png);
+      margin: 0 auto;
+    }
+    @include rwd-sm-max{
+      .banner{
+        background-image: url(../images/banner-sm.png);
+      }
+    }
+  }
+  // sec1結束
+  
+  // sec2開始
+  .sec2{
+    
+    .card,.card img{
+      border-radius: 20px 0px 20px 0px;
+      transition: 0.5s;
+    }
+    .card:hover img {
+      filter: brightness(0.5);
+    }
+    @include rwd-sm-max{
+      .card{
+        img {
+            height: 84px;
+            object-fit: cover;
+            width: 100%;
+        }
+      }
+    }
+  }
+  // sec2結束
+
+  // sec3開始
+  .sec3{
+    .straightLine{
+      width: 80px;
+      height: 1px;
+    }
+    .card{
+      background-color: $myprimary-1;
+      &-link{
+        letter-spacing: 0.1em;
+      }
+    }
+    @include rwd-lg-max{
+      .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    }
+  }
+  // sec3結束
+
+  // sec4開始
+  .sec4{
+    @include rwd-lg-max{
+      .sec-subtitle {
+        color: $mysuccess-2;
+      }
+      .cartoon img {
+        width: 160px;
+      }
+    }
+  }
+  // sec4結束
+
+  // sec5開始
+  .sec5{
+    .nav-link{
+      width: 258px;
+      text-align: start;
+      color: $mygray-6;
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      font-weight: 900;
+      background-color:white;
+      padding: 16px 0 16px 16px;
+      margin-bottom: 24px;
+      transition: .5s;
+    }
+    .nav-link:last-child {
+      margin-bottom: 0;
+    }
+    .nav-link:hover {
+      color:$mysuccess-2;
+    }
+    .nav-link.active {
+      background-color: $mysuccess-1;
+    }
+    .card-imgGroup-1{
+      li:first-child img {
+        border-radius: 20px 0px 0px 20px;
+      }
+      li:nth-child(2) img,
+      li:nth-child(3) img {
+        border-radius: 4px;
+      }
+      li:last-child img {
+        border-radius: 0px 20px 20px 0px;
+      }
+    }
+    .card-txtGroup li:hover{
+      color: $mysuccess-2;
+    }
+
+    @include rwd-lg-max{
+      .swiper-card{
+        padding: 16px;
+        &-txt li{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+        }
+      }
+    }
+  }
+  // sec5結束
+
+  // sec6開始
+  .sec6{
+    .straightLine {
+        width: 80px;
+        height: 1px;
+    }
+    .card{
+      background-color:$myprimary-1 ;
+      &-txtGroup li {
+        font-size: 20px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      &-link{
+        letter-spacing: 0.1em;
+        transition: .5s;
+        &:hover{
+          color: $mysuccess-3;
+        }
+      }
+    }
+  }
+  // sec6結束
+
+  // sec7開始
+  .sec7{
+    .pic1,
+    .pic2,
+    .pic3,
+    .pic4{
+      max-width: 306px;
+      min-width: 200px;
+      height: 236px;
+    }
+    .pic1{
+      background-image: url(../images/advice-1.png);
+    }
+    .pic2 {
+      background-image: url(../images/advice-2.png);
+    }
+    .pic3 {
+      background-image: url(../images/advice-3.png);
+    }
+    .pic4 {
+      background-image: url(../images/advice-4.png);
+    }
+    .badge{
+      color: $mysuccess-3;
+      border:1px solid $mysuccess-1;
+      padding: 8px 12px;
+      top:-16px;
+      left:16px;
+    }
+    .txt-gradient{
+      padding: 12px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .1),rgba(0, 0, 0, .8) );
+    }
+    .card1{
+      transform: translateY(40px);
+    }
+    .card2 {
+      transform: translateY(-80px);
+    }
+    .card3 {
+      transform: translateY(80px);
+    }
+    .card4 {
+      transform: translateY(-40px);
+    }
+    @include rwd-lg-max{
+      .sec-title{
+        text-align: center;
+      }
+      .pic1,
+      .pic2,
+      .pic3,
+      .pic4 {
+        max-width: 500px;
+      }
+      .card1,
+      .card2,
+      .card3,
+      .card4 {
+        transform: translateY(20px);
+      }
+}
+  }
+  // sec7結束
+
+  // sec8開始
+  .sec8{
+      padding: 80px 0;
+      .h4{
+        margin-bottom: 16px;
+      }
+  }
+    // sec8結束
+
+}

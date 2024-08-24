@@ -1,0 +1,30 @@
+.header{
+    border-bottom: 1px solid $mygray-3;
+    
+  .searchBtn{
+    border: 1px solid $mygray-3;
+    border-left: 0;
+    background-color: white;
+    border-radius: 100px;
+  }
+  .searchBtn:hover {
+    border: 1px solid $mygray-3;
+    border-left: 0;
+    background-color: white;
+    border-radius: 100px;
+  }
+  .nav-link{
+    color: $mygray-5;
+  }
+  .nav-link:hover{
+    color: $mysuccess-2;
+  }
+  @include rwd-lg-max{
+    .searchForm{
+      width: 100%;
+      height: 48px;
+    }
+  }
+}
+
+

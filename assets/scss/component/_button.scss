@@ -1,0 +1,130 @@
+// 按鈕
+.mybtn-success-lg {
+    background-color: $mysuccess-2;
+    color: white;
+    border-radius: 100px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: .5s;
+}
+.mybtn-success-lg:hover{
+    background-color: $mysuccess-3;
+    color: white;
+    border-radius: 100px;
+}
+.mybtn-success-lg.disabled {
+    background-color: $mygray-2;
+    color: white;
+    border: 0px;
+}
+
+.mybtn-success-sm {
+    background-color: $mysuccess-2;
+    color: white;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: .5s;
+}
+
+.mybtn-success-sm:hover {
+    background-color: $mysuccess-3;
+    color: white;
+    border-radius: 100px;
+}
+
+.mybtn-success-sm.disabled {
+    background-color: $mygray-2;
+    color: white;
+    border: 0px;
+}
+
+@include rwd-md-max{
+    .mybtn-success-lg {
+        background-color: $mysuccess-2;
+        color: white;
+        border-radius: 100px;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        transition: .5s;
+    }
+
+    .mybtn-success-lg:hover {
+        background-color: $mysuccess-3;
+        color: white;
+        border-radius: 100px;
+    }
+
+    .mybtn-success-lg.disabled {
+        background-color: $mygray-2;
+        color: white;
+        border: 0px;
+    }
+}
+
+
+.mybtn-gray-sm {
+    background-color: $mygray-1;
+    color: $mygray-4;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: .5s;
+}
+.mybtn-gray-sm:hover {
+    background-color: $mygray-2;
+    color:$mygray-5;
+    border-radius: 100px;
+}
+.mybtn-gray-sm.disabled {
+    background-color: $mygray-1;
+    color: $mygray-3;
+    border: 0px;
+}
+
+.mybtn-Switcher{
+    background-color:white;
+    color: $mygray-4;
+    border: 1px solid $mygray-4;
+    border-radius: 100px;
+    padding: 4px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.mybtn-Switcher:hover {
+    background-color:$mygray-4;
+    color: white;
+    border: 1px solid $mygray-4;
+    border-radius: 100px;
+    padding: 4px 16px;
+}
+
+// 標籤
+.mybadge{
+    background-color: $myprimary-3;
+    color: $myprimary-4;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 700;
+}
+
+.mybadge:hover {
+    background-color: $myprimary-4;
+    color: white;
+}
+
+@include rwd-lg-max{    
+    .mybadge {
+        font-size: 12px;
+    }
+}
