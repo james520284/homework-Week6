@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>index</title>
+    </head>
+    <body>
+    <%- include('./layout/header'); -%>
+    <main class="paySuccess-main">
+        <!-- sec1開始 -->
+        <section class="sec1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 py25 py-md15">
+                        <div class="d-flex justify-content-center align-items-center mb10 mb-md6">
+                            <img src="../assets/images/check2-circle.png" alt="check" class="correct-i mr5 mr-md3">
+                            <h1 class="mysuccess-2 pt2 fz-md-7">付款成功</h1>
+                        </div>
+                        <form action="blog.html" class="bg-white p10 border rounded-3">
+                            <div class="row">
+                                <h4 class="fw-9 mb6">訂購資訊</h4>
+                                <div class="py6 border-top border-bottom mb10">
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h5 class="fw-9">輕量型方案</h5>         
+                                        <h5 class="fw-9">NT 1,188</h5> 
+                                    </div>
+                                    <h6 class="mygray-4 mb10" style="color: #A1A1AA;">年繳</h6>
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h6 class="mygray-4" style="color: #A1A1AA;">開始日</h6>         
+                                        <h6 class="mygray-4">2024 / 5 / 1</h6> 
+                                    </div>
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h6 class="mygray-4" style="color: #A1A1AA;">終止日</h6>         
+                                        <h6 class="mygray-4">2025 / 5 / 1</h6> 
+                                    </div>
+                                </div>
+                                <div class="px3">
+                                    <button type="submit" class="btn mybtn-success-sm w-100">瀏覽文章<i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec1結束 -->
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/all.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+.blog-main {
+
+    // sec1開始
+    .sec1 {
+        .banner {
+            max-width: 1296px;
+            height: 454px;
+            background-image: url(../images/blog-banner.png);
+            margin: 0 auto;
+        }
+
+        @include rwd-sm-max {
+            .banner {
+                background-image: url(../images/blog-banner-sm.png);
+            }
+        }
+    }
+
+    // sec1結束
+
+    // sec2開始
+    .sec2 {
+        .breadcrumb {
+            padding: 12px 0;
+        }
+
+        .breadcrumb-item {
+            color: $mygray-4;
+            font-weight: 600;
+            &:hover {
+                color: $mysuccess-2 ;
+            }
+
+            &:last-child {
+                color: $mysuccess-2;
+                font-weight: 600;
+            }
+        }
+        .content p,
+        .content img{
+            margin-bottom: 40px;
+        }
+        @include rwd-md-max {
+            .breadcrumb-item {
+                font-size: 14px;
+            }
+            .content p,
+            .content img {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    // sec2結束
+}

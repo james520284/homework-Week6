@@ -1,0 +1,14 @@
+.paySuccess-main {
+    .sec1 {
+        .correct-i{
+            width: 48px;
+            height: 48px;
+        }
+        @include rwd-md-max{
+            .correct-i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

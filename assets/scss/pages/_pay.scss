@@ -1,0 +1,42 @@
+.pay-main {
+
+    // sec1開始
+    .sec1 {
+        .breadcrumb {
+            padding: 12px 0;
+        }
+
+        .breadcrumb-item {
+            color: $mygray-4;
+            font-weight: 600;
+
+            &:hover {
+                color: $mysuccess-2 ;
+            }
+
+            &:last-child {
+                color: $mysuccess-2;
+                font-weight: 600;
+            }
+        }
+        .inputUserInfo {
+            border: none;
+            background-color: $mygray-1;
+            padding: 12px 16px;
+            border-radius: 8px;
+        }
+        
+        .discount-btn{
+            text-wrap: nowrap;
+        }
+
+        @include rwd-lg-max {
+            .breadcrumb-item {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // sec1結束
+
+}

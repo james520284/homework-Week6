@@ -19,8 +19,6 @@ i{
     line-height: 0;
 }
 
-
-
 span{
     display: inline-block;
 }
@@ -49,4 +47,8 @@ ul
     margin-bottom: 0;
     letter-spacing: 0.05em;
     font-weight: 600;
+}
+
+label {
+    font-weight: 700;
 }

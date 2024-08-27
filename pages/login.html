@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>index</title>
+    </head>
+    <body>
+    <%- include('./layout/header'); -%>
+    <main class="login-main">
+        <!-- sec1開始 -->
+        <section class="sec1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 py25 py-md15">
+                        <form class="bg-white p10 border rounded-3">
+                            <h4 class="mysuccess-2 mb10 mb-md6">登入</h4>
+                            <div class="row">
+                                <div class="mb4">
+                                    <label for="userName" class="form-label mb3 mb-md2">會員帳號</label>
+                                    <input type="text" class="form-control inputUserInfo" id="userName" placeholder="請輸入會員帳號" name="userName">
+                                </div>
+                                <div class="mb4">
+                                    <label for="userPassword" class="form-label mb3 mb-md2">密碼</label>
+                                    <input type="password" class="form-control inputUserInfo" id="userPassword" placeholder="請輸入密碼" name="userPassword">
+                                </div>
+                                <div class="px3">
+                                    <button type="submit" class="btn mybtn-success-sm w-100">立即登入<i class="bi bi-arrow-right"></i></button>
+                                </div>
+                                <div class="divider position-relative my13 my-md10">
+                                    <span class="markTxt position-absolute top-0 start-50 translate-middle">或以其他方式登入</span>
+                                </div>
+                                <div class="px3 mb2 ">
+                                    <a href="#" class="btn mybtn-gray-sm w-100"><img src="../assets/images/google.png" alt="google-i" style="width: 16px;height: 16px;" class="google-i mr3">使用 Google 登入</a>
+                                </div>
+                                <div class="px3 mb10 mb-md6">
+                                    <a href="#" class="btn mybtn-gray-sm w-100"><img src="../assets/images/facebook.png" alt="fb-i" style="width: 16px;height: 16px;" class="fb-i mr3">使用 Facebook 登入</a>
+                                </div>
+                                <p class="text-center">還不是會員嗎？ <a href="register.html" class="mysuccess-2 d-inline-block">點此註冊</a></p>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec1結束 -->
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/all.js"></script>
+    </body>
+</html>
