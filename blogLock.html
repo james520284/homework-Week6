@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>index</title>
+      <script type="module" crossorigin src="/homework-Week6/assets/main-973fca89.js"></script>
+      <link rel="stylesheet" href="/homework-Week6/assets/main-f4059603.css">
+    </head>
+    <body>
+    <header class="header py9 py-lg5">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py0">
+            <div class="container-fluid px0">
+                <a class="navbar-brand mr9 " href="index.html">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB3VhJUttAFP0anGSp7FJJKlFuYKaU8YbmBMAJbE4ANzCcADgB4gQxy6xoKglQhUk5J8CLVLZhGSZ13m+pbdmWLNk4C+dVtdVyj7//6z/IoSljYVmsv37nn79567/69bPzmWYMNk0ZFtEWiofKdqUifJoxuKxRZUEAIHxGzbaUN0UH89jHB+q0L2U78fcxikA5vbiQHZoxuJZFZWi0wS/2Hfl47BQZWIb2MfZTiWgu+X/rXO7jsU8zCvvhmd68YcVW0YGOpQ/u9LKfHTMPm6+IIjqK3735iqjnDYrZsWaFFNB/Bpd/SiHtP9gRO+zoGYwahD7CUnRzeSGH+pWF8Nw/mANXEddnI9m2WBU7/FSK2lfnsjlqjcWKEPxsXUiZnNu+pboNm9c6k3qu+aqo24rWUPVgC388QpZ2iu3qjiVa4b4oN6Gi4+8DMmgvw8YPAhqWlM1msqBtjqLdtLbSLa6gjetk0XpKcxmlAXYd8gZpBJRNh5G6enDvaBuHsQdG13j84rI4gQCHei0LSsKVf5Ey18eKqDl3dM0HSQ4dKJcOsEcfij2EY7heWhJl07frdqG1gHoSNygDsUYwL0kaF2HX2HosXN4ara89diQBwX2HD94iSzm0gfc5lE2UYNCzsScMbQqg8F1mFc959UU2W9/kHJQqoRxflejEHEr3QDQ1VSwkTjuLJdhoDe1yEpfatwa0mcWSUQxMdLqBgIKFuzyTbZQAZTPZRc8PRuEwOrH360dvDQ+s2eOKO9TB0jGEYYlMNi9VRRmKE05IH2hS9NYwLNlJNrMiIACl2ackSmG+a0cYsc5swnSSWTfYHlKCEdiTtjPJDnksgRHaTqPlOBhkyWA7DGM9lx0U2b28PhAusmMw8KjX0wpaT00pIQ5zh2bJYEnsamswdqv0VCRYwm7eWHqzhqOKBYcF8J5/oMTm4HXKwlAuk8USE4hlGbpxwGtgkx29AbvHEl7jqQxMAlflpX4qHYEXgp0xU5eyYERNVyxamXIgZtbQbr7LjjD/uhQFDvd3XCnnuXlen0vqgSRZgknr2HDDLmDoxsE9EkkyKQOupmtpAxhMMyFUkW1gjHTzDGYn8jKRmf5DW0fdFw601PQ0x4iz6oNoMRIwpg2w8YimiNgTmTytsVhdXUvrpxWOCJYV7mZNxn4dbraBU/Z50okCsRxwYgnNsQ3xbE4FpmCfkmC2IZplA74X/aOaC1UR4Orrgw8j77PGVwpXVWftIz8QwRhpDbKV/hffNvpYMmUGGnBAFkexHX5nEwCpT7hwGoCb4Lk4DCOfO2qyh+cUOPdUdx+LbxbBTtMsXgTMEuQ/fiH7FIKlE3zjY7bj6518RFKqotjE4+gVYX8wyMq/lTG1Cn2vJCQAAAAASUVORK5CYII= " media="(max-width:992px)">
+                        <img src="data:image/png;base64,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" alt="logo">
+                    </picture>
+                </a>
+                <a class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fz-6"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 ">
+                        <form class="searchForm d-flex me-auto my-lg6">
+                            <div class="input-group">
+                                <input class="form-control border-r25" type="search" placeholder="搜尋文章" aria-label="Search">
+                                <button class="btn searchBtn" type="button"><i class="bi bi-search mysuccess-2 fz-6"></i></button>
+                            </div>
+                            
+                        </form>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="#">所有文章</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" href="plan.html">訂閱方案</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6" id="nav-item">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center" id="nav-item">
+                        <a class="btn mybtn-success-sm login w-100" aria-current="page" href="login.html">登入/註冊</a>
+                        
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>    <main class="blogLock-main">
+        <!-- sec1開始 -->
+        <section class="sec1 mb20 mb-md10">
+        <div class="banner bg-cover">
+        </div>
+        </section>
+        <!-- sec1結束 -->
+        <!-- sec2開始 -->
+        <section class="sec2 ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <nav aria-label="breadcrumb mb5 mb-md1">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item fw-6"><a href="index.html">首頁</a></li>
+                                <li class="breadcrumb-item fw-6 "><a href="#" class="d-inline-block">所有文章</a></li>
+                                <li class="breadcrumb-item fw-6 active" aria-current="page">私人島嶼的露營奇遇記</li>
+                            </ol>
+                        </nav>
+                        <h1 class="fz-lg-6 mb4 mb-md2">私人島嶼的露營奇遇記</h1>
+                        <time datetime="2024/5/1" class="d-inline-block mygray-3 mb10 mb-md7">2024 &nbsp;/&nbsp; 5 &nbsp;/ &nbsp;1</time>
+                        <article class="mb10 mb-md6 content">
+                            <p>嗨！我是秘境尋蹤小編 Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。</p>
+                            <p>這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。</p>
+                            <picture class="d-flex justify-content-center">
+                                <source srcset="/homework-Week6/assets/blog-article1-sm-a6aded37.png " media="(max-width:375px)" class="img-fluid">
+                                <img src="/homework-Week6/assets/blog-article1-62ca3d49.png" class="img-fluid w-100" alt="blog1">
+                            </picture>
+                        </article>
+                        <div class="lock d-flex flex-column align-items-center">
+                            <h6 class="mb4 d-none d-md-block">本篇為會員專屬文章，馬上訂閱瀏覽所有內容！</h6>
+                            <h6 class="mb4 d-md-none text-center">本篇為會員專屬文章<br> 馬上訂閱瀏覽所有內容！</h6>
+                            <a href="#" class="btn mybtn-success-lg mb25 ">我要訂閱 <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sec2結束 -->
+        <!-- sec3開始 -->
+        <section class="sec3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="mb10 mb-lg5">延伸閱讀</h2>
+                        <ul class="list-unstyled d-none d-lg-block">
+                            <li>
+                                <div class="card mb20 bg-myprimary-1 border-0">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-3">
+                                        <img src="/homework-Week6/assets/blog-more1-565e9dc0.png" class="img-fluid rounded-start w-100" alt="blog-more">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb2">週末說走就走露營記</h5>
+                                                <p class="card-text mb3">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+                                                <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card mb20 bg-myprimary-1 border-0">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-3">
+                                        <img src="/homework-Week6/assets/blog-more2-270a554e.png" class="img-fluid rounded-start w-100" alt="blog-more">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb2">城市野營日記</h5>
+                                                <p class="card-text mb3">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
+                                                <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card mb20 bg-myprimary-1 border-0">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-3">
+                                        <img src="/homework-Week6/assets/blog-more3-0ca4c6d4.png" class="img-fluid rounded-start w-100" alt="blog-more">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb2">和寵物去露營 - 大自然之旅的雙倍體驗</h5>
+                                                <p class="card-text mb3">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+                                                <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- swiper開始 -->
+                        <div class="blog-sec3-swiper h-100 d-lg-none overflow-hidden mb9">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <div class="card swiper-card w-100 bg-myprimary-1 border-0 border-bottom rounded-0" style="width: 18rem;">
+                                        <img src="/homework-Week6/assets/blog-more1-lg-4ad280b8.png" class="card-img-top mb4" alt="like">
+                                        <h5 class="card-title mb2">私人島嶼的露營奇遇記</h5>
+                                        <p class="mygray-4 mb3">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>                                    
+                                        <div class="card-body swiper-card-body">
+                                            <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card swiper-card w-100 bg-myprimary-1 border-0 border-bottom rounded-0" style="width: 18rem;">
+                                        <img src="/homework-Week6/assets/blog-more2-lg-c89c89f0.png" class="card-img-top mb4" alt="like">
+                                        <h5 class="card-title mb2">城市野營日記</h5>
+                                        <p class="mygray-4 mb3">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不安...</p>                                    
+                                        <div class="card-body swiper-card-body">
+                                            <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card swiper-card w-100 bg-myprimary-1 border-0 border-bottom rounded-0" style="width: 18rem;">
+                                        <img src="/homework-Week6/assets/blog-more3-lg-d4605d94.png" class="card-img-top mb4" alt="like">
+                                        <h5 class="card-title mb2">和寵物去露營 - 大自然之旅的...</h5>
+                                        <p class="mygray-4 mb3">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...</p>                                    
+                                        <div class="card-body swiper-card-body">
+                                            <a href="#" class="fz-5 fw-7 mysuccess-2 text-end">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sec3結束 -->
+    </main>
+    <footer class="footer py6 py-sm5">
+    <div class="container">
+        <p class="copyright text-center myprimary-4 fz-sm-3">&copy; Vivre 2024 All right Reserved</p>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/all.js"></script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>index</title>
+      <script type="module" crossorigin src="/homework-Week6/assets/main-973fca89.js"></script>
+      <link rel="stylesheet" href="/homework-Week6/assets/main-f4059603.css">
+    </head>
+    <body>
+    <header class="header py9 py-lg5">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py0">
+            <div class="container-fluid px0">
+                <a class="navbar-brand mr9 " href="index.html">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB3VhJUttAFP0anGSp7FJJKlFuYKaU8YbmBMAJbE4ANzCcADgB4gQxy6xoKglQhUk5J8CLVLZhGSZ13m+pbdmWLNk4C+dVtdVyj7//6z/IoSljYVmsv37nn79567/69bPzmWYMNk0ZFtEWiofKdqUifJoxuKxRZUEAIHxGzbaUN0UH89jHB+q0L2U78fcxikA5vbiQHZoxuJZFZWi0wS/2Hfl47BQZWIb2MfZTiWgu+X/rXO7jsU8zCvvhmd68YcVW0YGOpQ/u9LKfHTMPm6+IIjqK3735iqjnDYrZsWaFFNB/Bpd/SiHtP9gRO+zoGYwahD7CUnRzeSGH+pWF8Nw/mANXEddnI9m2WBU7/FSK2lfnsjlqjcWKEPxsXUiZnNu+pboNm9c6k3qu+aqo24rWUPVgC388QpZ2iu3qjiVa4b4oN6Gi4+8DMmgvw8YPAhqWlM1msqBtjqLdtLbSLa6gjetk0XpKcxmlAXYd8gZpBJRNh5G6enDvaBuHsQdG13j84rI4gQCHei0LSsKVf5Ey18eKqDl3dM0HSQ4dKJcOsEcfij2EY7heWhJl07frdqG1gHoSNygDsUYwL0kaF2HX2HosXN4ara89diQBwX2HD94iSzm0gfc5lE2UYNCzsScMbQqg8F1mFc959UU2W9/kHJQqoRxflejEHEr3QDQ1VSwkTjuLJdhoDe1yEpfatwa0mcWSUQxMdLqBgIKFuzyTbZQAZTPZRc8PRuEwOrH360dvDQ+s2eOKO9TB0jGEYYlMNi9VRRmKE05IH2hS9NYwLNlJNrMiIACl2ackSmG+a0cYsc5swnSSWTfYHlKCEdiTtjPJDnksgRHaTqPlOBhkyWA7DGM9lx0U2b28PhAusmMw8KjX0wpaT00pIQ5zh2bJYEnsamswdqv0VCRYwm7eWHqzhqOKBYcF8J5/oMTm4HXKwlAuk8USE4hlGbpxwGtgkx29AbvHEl7jqQxMAlflpX4qHYEXgp0xU5eyYERNVyxamXIgZtbQbr7LjjD/uhQFDvd3XCnnuXlen0vqgSRZgknr2HDDLmDoxsE9EkkyKQOupmtpAxhMMyFUkW1gjHTzDGYn8jKRmf5DW0fdFw601PQ0x4iz6oNoMRIwpg2w8YimiNgTmTytsVhdXUvrpxWOCJYV7mZNxn4dbraBU/Z50okCsRxwYgnNsQ3xbE4FpmCfkmC2IZplA74X/aOaC1UR4Orrgw8j77PGVwpXVWftIz8QwRhpDbKV/hffNvpYMmUGGnBAFkexHX5nEwCpT7hwGoCb4Lk4DCOfO2qyh+cUOPdUdx+LbxbBTtMsXgTMEuQ/fiH7FIKlE3zjY7bj6518RFKqotjE4+gVYX8wyMq/lTG1Cn2vJCQAAAAASUVORK5CYII= " media="(max-width:992px)">
+                        <img src="data:image/png;base64,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" alt="logo">
+                    </picture>
+                </a>
+                <a class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fz-6"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 ">
+                        <form class="searchForm d-flex me-auto my-lg6">
+                            <div class="input-group">
+                                <input class="form-control border-r25" type="search" placeholder="搜尋文章" aria-label="Search">
+                                <button class="btn searchBtn" type="button"><i class="bi bi-search mysuccess-2 fz-6"></i></button>
+                            </div>
+                            
+                        </form>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="#">所有文章</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" href="plan.html">訂閱方案</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6" id="nav-item">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center" id="nav-item">
+                        <a class="btn mybtn-success-sm login w-100" aria-current="page" href="login.html">登入/註冊</a>
+                        
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>    <main class="login-main">
+        <!-- sec1開始 -->
+        <section class="sec1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 py25 py-md15">
+                        <form class="bg-white p10 border rounded-3">
+                            <h4 class="mysuccess-2 mb10 mb-md6">登入</h4>
+                            <div class="row">
+                                <div class="mb4">
+                                    <label for="userName" class="form-label mb3 mb-md2">會員帳號</label>
+                                    <input type="text" class="form-control inputUserInfo" id="userName" placeholder="請輸入會員帳號" name="userName">
+                                </div>
+                                <div class="mb4">
+                                    <label for="userPassword" class="form-label mb3 mb-md2">密碼</label>
+                                    <input type="password" class="form-control inputUserInfo" id="userPassword" placeholder="請輸入密碼" name="userPassword">
+                                </div>
+                                <div class="px3">
+                                    <button type="submit" class="btn mybtn-success-sm w-100">立即登入<i class="bi bi-arrow-right"></i></button>
+                                </div>
+                                <div class="divider position-relative my13 my-md10">
+                                    <span class="markTxt position-absolute top-0 start-50 translate-middle">或以其他方式登入</span>
+                                </div>
+                                <div class="px3 mb2 ">
+                                    <a href="#" class="btn mybtn-gray-sm w-100"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMvSURBVEiJpZZPbBR1FMc/b2a2LFIrWStr1/4xFBaNtF404WAjGkVZLZ4kG9ISPRqMhoPeUKBEExNivWqIMS1Gi8R/SbVEYgnBpMFoQimHlt2YiEvZtgvVXVncmXkeaJud2dndJnyTubzve5/3e/ll3oxQQ/r8Qw9iuEmEJ4FuIHI5b4cNoRQSboSEsyHL/KD51MxENYYEghMPd2C476GaBIxybzpf8gIE7jJlOozV13x6+ryfZfgDmti8B3EuoLonyK/IVyjYGr/hlCZmn9n4fs0JNBHfj3C02mRBE/hh98ut+5rGM/MVE+gL8WQdeAY4Gza4bonYQQmNljFeDl+ZQF/qbMM2J4F7fDWKMoS6g/LD5d/LjeyzGxP/uXxYsDUOcHfIOBP7KbU9aCr0vHmMk9HNTDY+DoSXvDyqr8jozMkqE91utKPzDXU0Hj2dfj3IF71EB0oKMMlZV/i0Nc21hh5U+2R05vNa8FVJL/G2TqGe5+t1g3cMXpKF8lRFdFNhuFZR5OBCk1PMm/Xgi+H2f0Sn+BNoLYtn5BEeqFa04UCmD2GoHnxJvxhAsy+YqlUh0L5KOEBX3Tf1DtVgAPO+YGetChfc1fNlwQIm8d5BTCd5TLr4NbBEzRMYdhuI5Ym7tKqQ8GbrlIUwjrKzPPyHs64fCoENskeiKWCfP77h3cxnqO8wcEZ0inYgDZi2ypUDC1vSH//d0aNo//XeU8eDR/cq+s5fvYp8i3ePuWo4WwSgeNH45Pt/o5venNu6regay6uigMiruRd/PLEK+JfAWo+hfJUdiL0sAJHRna047kUClp3CsAmD871jv5Ub648/3S+lNa+F0se2UbmB82KYj147GE2vGJHvntuN8EVA8rKuAilnrtgtjjaqe3vVW07PtDm7L+45u7I3OxAbhrLvQW7X2AiwH/xXtaIW4AlK2rQMB7AbznVi5W+uwJG3luGeBgC53rGPUJLAYpUmlXJcsxQ7NAssqkoye7jlaLld8Sbndo2N4GiXwhDg1G0g4IZmi7bhbp0baBkJsKsr8s2ONjWNpOBuB+kGvde5WlyLiCOW5DCZMJEjC3t/rvrb8j9aeDScVZZt1AAAAABJRU5ErkJggg==" alt="google-i" style="width: 16px;height: 16px;" class="google-i mr3">使用 Google 登入</a>
+                                </div>
+                                <div class="px3 mb10 mb-md6">
+                                    <a href="#" class="btn mybtn-gray-sm w-100"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAsVJREFUSImtlktoE2sUx3/nm0mLqeOjgkqSVqEKiogu3KgrwY268LHwIngREdGV7hJQ8QE+2uhSFwqCVlz46BVF4bq6F0Rx4cbrovhY9JGmKWqsjcY2mZlzF03LGNNOrf533/+c8z/n++Y/840wCWKpfLOHtVUwW0AXA4lKKAPShfoPTSRyP3sm2juRhtQiE0eL8XLZPS7CPsCabAjABzoQL5lrndsV2iCWHNrmCzeAmSHC1SiosnsgPetBkDTBxYLU58O+0DENcQBHhHsLkp8PBcnxHVQm76huWg0j+KubzduWedbQ1xG1+4f8hs6cNg2XdUYlxVdl+9hOBCCeLCY8cTvDJt+4zPrv6p/RWXUWi4P8yUfDzy4/Ka8LUAVXrWUf0g1ZA+CJeypMfOl8q7t9T7SlWnwCOBG8UwAmlso3A3vCKi7sqO8WoSHIKXwqedo7WNRIdb4Ke+PJYsIe9XmoFVkRM/OD69N/jzy99G9pPTAXaKpRYnnibTWisjlMHKDOlvHpfeV9RXxyqG42CEum0kACjvOVkanUILQYYOGUkqeHuCxMDX2B7x/eGPrOzcwbkcYwlbXnv2a6PvqJGqGCAQZ+ccpvPXk/VisgkDPA619RHy7T62vtt1/hja3oY0E21Uq49tx9Fa04/I81kVUCcyqFg7delF8CvMp69RM1V/SxxFL5Zh/7HfDDyxJE71knY5vR+8D1yTQdKdQ68yBKltotJtvW2APcDEn+aYjS3peOZgyAwT0BfPqN+nmDPfotAsi2NfYgcgDQ3yCuorK/Lx3NjDcAyLU6d0TkIKNX4LTFUT3Un3b+GiO+s1d/q3MFZBfTO648Kjtz6dkXg+QP/s21Obdt214JtAOlKQiXEK67aq3MpZ271cGafxVjSBwtxj2vvFNVNnSfdmJ1NssBSi6di44VsiL6T9m3b31IN2Qn0vgfVQr3Gl3992kAAAAASUVORK5CYII=" alt="fb-i" style="width: 16px;height: 16px;" class="fb-i mr3">使用 Facebook 登入</a>
+                                </div>
+                                <p class="text-center">還不是會員嗎？ <a href="register.html" class="mysuccess-2 d-inline-block">點此註冊</a></p>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec1結束 -->
+    </main>
+
+    <footer class="footer py6 py-sm5">
+    <div class="container">
+        <p class="copyright text-center myprimary-4 fz-sm-3">&copy; Vivre 2024 All right Reserved</p>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/all.js"></script>
+    </body>
+</html>

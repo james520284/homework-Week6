@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>index</title>
-    <script type="module" crossorigin src="/homework-Week6/assets/main-b4512363.js"></script>
-    <link rel="stylesheet" href="/homework-Week6/assets/main-b09055e5.css">
+    <script type="module" crossorigin src="/homework-Week6/assets/main-973fca89.js"></script>
+    <link rel="stylesheet" href="/homework-Week6/assets/main-f4059603.css">
   </head>
   <body>
     <header class="header py9 py-lg5">
@@ -36,13 +37,13 @@
                         <a class="nav-link h6 px-lg3" aria-current="page" href="#">所有文章</a>
                         </li>
                         <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
-                        <a class="nav-link h6 px-lg3" href="#">訂閱方案</a>
+                        <a class="nav-link h6 px-lg3" href="plan.html">訂閱方案</a>
                         </li>
                         <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6" id="nav-item">
                         <a class="nav-link h6 px-lg3" aria-current="page" href="about.html">關於我們</a>
                         </li>
                         <li class="nav-item d-flex align-items-center" id="nav-item">
-                        <a class="btn mybtn-success-sm login w-100" aria-current="page" href="#">登入/註冊</a>
+                        <a class="btn mybtn-success-sm login w-100" aria-current="page" href="login.html">登入/註冊</a>
                         
                         </li>
                         
@@ -53,10 +54,10 @@
         </nav>
     </div>
 </header>    
-    <main class="index-main">
+    <main class="index-main over-hidden">
       <!-- sec1開始 -->
       <section class="sec1 py20 py-lg0">
-        <div class="banner bg-cover d-flex flex-column justify-content-end justify-content-sm-center">
+        <div class="banner bg-cover d-flex flex-column justify-content-end justify-content-sm-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
           <div class="banner-txt d-flex flex-column  align-items-center align-items-sm-start ml15 ml-sm0">
             <h5 class="subtitle  mb3 mb-sm2 text-white fz-sm-4">獻給新世代的生活風格誌</h5>
             <h1 class="title  mb6 mb-sm5 text-white fz-sm-7">一起探索生活的無限可能</h1>
@@ -67,7 +68,7 @@
       <!-- sec1結束 -->
 
       <!-- sec2開始 -->
-      <section class="sec2 py20 py-lg12">
+      <section class="sec2 py20 py-lg12" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="500">
         <div class="container">
           <h2 class="sec-title fz-sm-6 mb6">熱門主題</h2>
           <div class="row gy-2 gy-sm-4">
@@ -140,7 +141,7 @@
       </section>
 
       <!-- sec3開始 -->
-      <section class="sec3 py20 py-lg12">
+      <section class="sec3 py20 " data-aos="fade-left"  data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="500">
         <div class="container">
             <div class="row">
               <div class="col-lg-4">
@@ -161,9 +162,7 @@
                 </div>
               </div>
               <div class="col-lg-8">
-                
-              <!-- swiper-lg -->
-                <div class="swiper h-100 d-none d-lg-block">
+                <div class="swiper h-100">
                   <div class="swiper-wrapper ">
                     <div class="swiper-slide ">
                       <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
@@ -174,7 +173,7 @@
                           </p>
                         </div>
                         <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
+                          <a href="blogLock.html" class="card-link fz-5 fw-7 mysuccess-2 stretched-link">Read More</a>
                         </div>
                       </div>
                     </div>
@@ -201,7 +200,7 @@
                           </p>
                         </div>
                         <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
+                          <a href="blogLock.html" class="card-link fz-5 fw-7 mysuccess-2 stretched-link">Read More</a>
                         </div>
                       </div>
                     </div>
@@ -228,86 +227,13 @@
                           </p>
                         </div>
                         <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
+                          <a href="blogLock.html" class="card-link fz-5 fw-7 mysuccess-2 stretched-link">Read More</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-              <!-- swiper-sm -->
-                <div class="swiper-sm  d-lg-none overflow-hidden">
-                  <div class="swiper-wrapper ">
-                    <div class="swiper-slide ">
-                      <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
-                        <img src="/homework-Week6/assets/article-1-9edb45c2.png" class="card-img-top mb6" alt="article">
-                        <div class="card-body px-0">
-                          <h5 class="card-title">私人島嶼的露營奇遇記</h5>
-                          <p class="card-text mygray-4">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
-                          </p>
-                        </div>
-                        <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
-                        <img src="/homework-Week6/assets/article-2-39bcbf9d.png" class="card-img-top mb6" alt="article">
-                        <div class="card-body px-0">
-                          <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
-                          <p class="card-text mygray-4">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
-                          </p>
-                        </div>
-                        <div class="mt-auto pb6 d-flex justify-content-between align-items-center">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
-                          <span class="badge mybadge">會員專屬</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide ">
-                      <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
-                        <img src="/homework-Week6/assets/article-1-9edb45c2.png" class="card-img-top mb6" alt="article">
-                        <div class="card-body px-0">
-                          <h5 class="card-title">私人島嶼的露營奇遇記</h5>
-                          <p class="card-text mygray-4">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
-                          </p>
-                        </div>
-                        <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
-                        <img src="/homework-Week6/assets/article-2-39bcbf9d.png" class="card-img-top mb6" alt="article">
-                        <div class="card-body px-0">
-                          <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
-                          <p class="card-text mygray-4">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
-                          </p>
-                        </div>
-                        <div class="mt-auto pb6 d-flex justify-content-between align-items-center">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
-                          <span class="badge mybadge">會員專屬</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide ">
-                      <div class="card w-100 border-0 border-bottom border-dark border-1 rounded-0 h-100" style="width: 18rem;">
-                        <img src="/homework-Week6/assets/article-1-9edb45c2.png" class="card-img-top mb6" alt="article">
-                        <div class="card-body px-0">
-                          <h5 class="card-title">私人島嶼的露營奇遇記</h5>
-                          <p class="card-text mygray-4">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
-                          </p>
-                        </div>
-                        <div class="mt-auto pb6">
-                          <a href="#" class="card-link fz-5 fw-7 mysuccess-2">Read More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiperBtn-sm d-flex align-items-center d-lg-none">
+                <div class="swiperBtn d-lg-none d-flex align-items-center mt6">
                     <span class="pageNum-sm mygray-5"></span>
                     <div class="pageArrow d-flex align-items-center">
                       <a href="#" class="mybtn-Switcher prev-btn-sm mr5">
@@ -318,7 +244,7 @@
                         <i class="bi bi-arrow-right fz-4"></i>
                       </a>
                     </div>
-                  </div>
+                </div>
               </div>
             </div>
       </section>
@@ -326,6 +252,7 @@
 
       <!-- sec4開始 -->
       <section class="sec4 bg-myprimary-2 py20 py-lg12">
+
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-4 d-none d-lg-flex flex-column justify-content-end align-items-start">
@@ -356,7 +283,7 @@
       <!-- sec4結束 -->
 
       <!-- sec5開始 -->
-      <section class="sec5 py20 py-lg12">
+      <section class="sec5 py20 py-lg12" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="500">
         <div class="container">
           <h2 class="sec-title mb10">大家都在看</h2>
           <div class="row d-none d-lg-flex">
@@ -489,7 +416,7 @@
             </div>
           </div>
             <!-- swiper開始 -->
-          <div class="sec5-swiper h-100 d-lg-none overflow-hidden">
+          <div class="index-sec5-swiper h-100 d-lg-none overflow-hidden">
             <div class="swiper-wrapper">
               <div class="swiper-slide ">
                 <div class="card swiper-card w-100" style="width: 18rem;">
@@ -595,7 +522,7 @@
       <!-- sec5結束 -->
 
       <!-- sec6開始 -->
-      <section class="sec6 py20 py-lg12">
+      <section class="sec6 py20 py-lg12" data-aos="fade-left"  data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="500">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center mb10 mb-lg6">
             <h2 class="sec6-title fz-6">品味生活</h2>
@@ -713,7 +640,7 @@
                 </div>
               </div>
               <!-- 平板/手機版型 -->
-              <div class="sec7-swiper d-lg-none overflow-hidden">
+              <div class="index-sec7-swiper d-lg-none overflow-hidden">
                 <div class="swiper-wrapper ">
                   <div class="swiper-slide ">
                     <div class="pic1 d-flex flex-column justify-content-end position-relative bg-cover card1">
@@ -764,7 +691,7 @@
       <!-- sec8開始 -->
       <section class="sec8 py20 py-lg12">
         <div class="container">
-          <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-start">
+          <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-start" >
             <h2 class="fz-md-6 mb-md4">想看什麼主題由你決定！</h2>
             <div class="d-flex  flex-column align-items-center align-items-md-end">
               <h4 class="mb4 fz-md-5 mb-md9">歡迎投稿與我們分享</h4>
@@ -783,6 +710,7 @@
 </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
   </body>
 </html>

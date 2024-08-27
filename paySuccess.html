@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>index</title>
+      <script type="module" crossorigin src="/homework-Week6/assets/main-973fca89.js"></script>
+      <link rel="stylesheet" href="/homework-Week6/assets/main-f4059603.css">
+    </head>
+    <body>
+    <header class="header py9 py-lg5">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py0">
+            <div class="container-fluid px0">
+                <a class="navbar-brand mr9 " href="index.html">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB3VhJUttAFP0anGSp7FJJKlFuYKaU8YbmBMAJbE4ANzCcADgB4gQxy6xoKglQhUk5J8CLVLZhGSZ13m+pbdmWLNk4C+dVtdVyj7//6z/IoSljYVmsv37nn79567/69bPzmWYMNk0ZFtEWiofKdqUifJoxuKxRZUEAIHxGzbaUN0UH89jHB+q0L2U78fcxikA5vbiQHZoxuJZFZWi0wS/2Hfl47BQZWIb2MfZTiWgu+X/rXO7jsU8zCvvhmd68YcVW0YGOpQ/u9LKfHTMPm6+IIjqK3735iqjnDYrZsWaFFNB/Bpd/SiHtP9gRO+zoGYwahD7CUnRzeSGH+pWF8Nw/mANXEddnI9m2WBU7/FSK2lfnsjlqjcWKEPxsXUiZnNu+pboNm9c6k3qu+aqo24rWUPVgC388QpZ2iu3qjiVa4b4oN6Gi4+8DMmgvw8YPAhqWlM1msqBtjqLdtLbSLa6gjetk0XpKcxmlAXYd8gZpBJRNh5G6enDvaBuHsQdG13j84rI4gQCHei0LSsKVf5Ey18eKqDl3dM0HSQ4dKJcOsEcfij2EY7heWhJl07frdqG1gHoSNygDsUYwL0kaF2HX2HosXN4ara89diQBwX2HD94iSzm0gfc5lE2UYNCzsScMbQqg8F1mFc959UU2W9/kHJQqoRxflejEHEr3QDQ1VSwkTjuLJdhoDe1yEpfatwa0mcWSUQxMdLqBgIKFuzyTbZQAZTPZRc8PRuEwOrH360dvDQ+s2eOKO9TB0jGEYYlMNi9VRRmKE05IH2hS9NYwLNlJNrMiIACl2ackSmG+a0cYsc5swnSSWTfYHlKCEdiTtjPJDnksgRHaTqPlOBhkyWA7DGM9lx0U2b28PhAusmMw8KjX0wpaT00pIQ5zh2bJYEnsamswdqv0VCRYwm7eWHqzhqOKBYcF8J5/oMTm4HXKwlAuk8USE4hlGbpxwGtgkx29AbvHEl7jqQxMAlflpX4qHYEXgp0xU5eyYERNVyxamXIgZtbQbr7LjjD/uhQFDvd3XCnnuXlen0vqgSRZgknr2HDDLmDoxsE9EkkyKQOupmtpAxhMMyFUkW1gjHTzDGYn8jKRmf5DW0fdFw601PQ0x4iz6oNoMRIwpg2w8YimiNgTmTytsVhdXUvrpxWOCJYV7mZNxn4dbraBU/Z50okCsRxwYgnNsQ3xbE4FpmCfkmC2IZplA74X/aOaC1UR4Orrgw8j77PGVwpXVWftIz8QwRhpDbKV/hffNvpYMmUGGnBAFkexHX5nEwCpT7hwGoCb4Lk4DCOfO2qyh+cUOPdUdx+LbxbBTtMsXgTMEuQ/fiH7FIKlE3zjY7bj6518RFKqotjE4+gVYX8wyMq/lTG1Cn2vJCQAAAAASUVORK5CYII= " media="(max-width:992px)">
+                        <img src="data:image/png;base64,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" alt="logo">
+                    </picture>
+                </a>
+                <a class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fz-6"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 ">
+                        <form class="searchForm d-flex me-auto my-lg6">
+                            <div class="input-group">
+                                <input class="form-control border-r25" type="search" placeholder="搜尋文章" aria-label="Search">
+                                <button class="btn searchBtn" type="button"><i class="bi bi-search mysuccess-2 fz-6"></i></button>
+                            </div>
+                            
+                        </form>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="#">所有文章</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6">
+                        <a class="nav-link h6 px-lg3" href="plan.html">訂閱方案</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mr5 mr-lg0 mb-lg6" id="nav-item">
+                        <a class="nav-link h6 px-lg3" aria-current="page" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center" id="nav-item">
+                        <a class="btn mybtn-success-sm login w-100" aria-current="page" href="login.html">登入/註冊</a>
+                        
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>    <main class="paySuccess-main">
+        <!-- sec1開始 -->
+        <section class="sec1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 py25 py-md15">
+                        <div class="d-flex justify-content-center align-items-center mb10 mb-md6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATeSURBVHgB7ZndbhpHFMfPmTWO1N64T9DNE4Q3KH4CE9VGUW8KlzZxTXEi9c72XaXUBjfGvoTcVMg0Kn0CnDcgT5DNE5SrSgHvTM9Z2GVhZ9kPKIoU/yTEYO/O/v+zZ77OADzwwJcNworZa1SyYIusANhSCFvOQxQM7hEtIWyrU673YYUsbSBfq2w9MkRRCtyhyrIwER0KmVEAfZDqzciW3e7P9QEsQWoDLHxjUxwJhZVI0WGwGVTd0VCekRELUpDKwO5VtSIAT3TCKVw+krK+RGWhRKd1lVBbZNRUAp+QaDNYo7IUGE875VeR4bX3e7XI352fLlr8vQEJeFarmHbGaCJCbk7AOxLeRUN22/uLW/LZzS+mLYc5RGoAzwyaKO08cGgtYPfmxQlKdQpjI46J2AZYvNwUPXplpvdHBEvYWGofnt/Frae9/6tFXy3+7DWqRTJOIYhquLHZggjxYiLewXAlJBDPLeX+TYG87JRrFVgDAfFSnd0eXji/I9+ARvxASHzaPqzdwRpYJJ6JNODE/DRsaAgU2+3DVysdy8OIEs8sNMCjjb/D2giltwefj3hGhFXAoSMQjvwVvD0478IaiCueCTUgM3jqxT2NNmEVrJok4hmtAZ5lAcWO+1spdQZrIKl4RtsHMobgSWU8y1Lrdw7Gs97/SRrxjD6ENvBHt7iO1k8rntEaoNkx65ZHYvNOdw2vSdx1yTIsI54JGHDW877w6Y6n/tlrSDga2OTPbqN6AilZVjwTMIDSMN2ykuq99i7DXwGepjGxCvHj589B6ypz+kNZups6ZerUCt5MK0lmIqn4ReEaMKDUdI3vrud13D4/L6YxkUa8G646E6ETWRySmkgTNrSUMXXl6TODN3itzjspiCCuibQx79cgfdqmz5sDpe8i2gZCDKJMLNlhTa9ehdb8PwMzsW3IPk6GGXobTyAmbKJwdcxDrzMJTkxQQcAyow0CehqUEFbw/xoKjeN/YDIXDIX9uLsfP2NAJlquiQAJxY83U8YHLlMqZtApn38zf422E1NCylvzb9jOuig28+HkkWKctw2Rc8sYMidpDdAr/9u7EXAHEhIwkXKSQgO8fqSEkwgIoDXwaST5Yqcz845s93UlBwlhEwpUiT9pxI/HfDSdH7SkoeSXdjMVmpUoNF6cku9JCyjrtnzxGNZIoVH94Bqg+G9R/Jd014VOZMPhfR3AHVLRLFxVa7AmeNidaX2RCV3ShxrgpCulB6c3IlbShFJSvn99nPcPu1LipW5F7MmCCPauj3u0P8hxWTlvRGzHyWGmYa/2MosZ2ZvmXNU7Ct3consi10IGZkr8GrmMztwge9xKsGL47c6Ip2cOxWYx6r5IA5zLFJjZ9pswBPy1zEZmnsJ1tSaEMSuenrkodFxip9c5qyzVqDebHqe0uA1nbqo7KdzqQoimP+eaRPz48gQ4qXE1arp9YsrYCJ243EUdVORvKuajkcg7JzqaND2HTVzxTLoDjmvngOMo7LCCqu1T9vqj/4ADQXwL4CQLNPfAQCo8+/P5b3VISOojJiek7NEp9aLv9EZiQQbxcvjVfb1bSndWtvwhX7OylflX5KmiIoyXvlGbIBKq3vOJzqevZSutcJeVH7P+0HiZvZfS5OSAu7/mXR5vlIRh9P8orye7/cADXwr/AZo4qEB4Kn8cAAAAAElFTkSuQmCC" alt="check" class="correct-i mr5 mr-md3">
+                            <h1 class="mysuccess-2 pt2 fz-md-7">付款成功</h1>
+                        </div>
+                        <form action="blog.html" class="bg-white p10 border rounded-3">
+                            <div class="row">
+                                <h4 class="fw-9 mb6">訂購資訊</h4>
+                                <div class="py6 border-top border-bottom mb10">
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h5 class="fw-9">輕量型方案</h5>         
+                                        <h5 class="fw-9">NT 1,188</h5> 
+                                    </div>
+                                    <h6 class="mygray-4 mb10" style="color: #A1A1AA;">年繳</h6>
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h6 class="mygray-4" style="color: #A1A1AA;">開始日</h6>         
+                                        <h6 class="mygray-4">2024 / 5 / 1</h6> 
+                                    </div>
+                                    <div class="d-flex justify-content-between mb3">
+                                        <h6 class="mygray-4" style="color: #A1A1AA;">終止日</h6>         
+                                        <h6 class="mygray-4">2025 / 5 / 1</h6> 
+                                    </div>
+                                </div>
+                                <div class="px3">
+                                    <button type="submit" class="btn mybtn-success-sm w-100">瀏覽文章<i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec1結束 -->
+    </main>
+
+    <footer class="footer py6 py-sm5">
+    <div class="container">
+        <p class="copyright text-center myprimary-4 fz-sm-3">&copy; Vivre 2024 All right Reserved</p>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/all.js"></script>
+    </body>
+</html>
